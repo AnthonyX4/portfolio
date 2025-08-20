@@ -1,0 +1,80 @@
+nav {
+  height: 90vh;
+
+  position: fixed;
+  top: 5vh;
+  left: 3.4rem;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.navList {
+  display: flex;
+  flex-direction: row-reverse;
+
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+}
+
+.navList a {
+  padding: 1rem 0.5rem;
+}
+
+.navIcons {
+  display: flex;
+  flex-direction: column;
+  margin-top: auto;
+}
+
+.navIcons a {
+  padding: 0.5rem 0.5rem;
+}
+
+.navIcons a:hover {
+  color: var(--accent-color);
+}
+
+.navList a,
+.navIcons a {
+  color: var(--text-color);
+  font-size: 0.9375rem;
+}
+
+
+@media screen and (max-width: 650px) {
+  nav {
+    height: 100vh;
+    background-color: var(--primary-color);
+    inset: 0;
+    justify-content: center;
+  }
+
+  .navList {
+    width: 100%;
+    height: 100vh;
+
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+
+    writing-mode: horizontal-tb;
+    transform: rotate(0deg);
+  }
+
+  .navIcons {
+    position: fixed;
+    bottom: 2rem;
+    left: 2rem;
+
+    display: flex;
+    flex-direction: row;
+  }
+
+  .logo {
+    position: fixed;
+    top: 2rem;
+    left: 2rem;
+  }
+
+}
