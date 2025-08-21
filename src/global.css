@@ -21,5 +21,12 @@ body {
 }
 
 main {
-  padding: 3rem min(5rem, 7%) 0 min(9rem, 15%);  
+  padding: 3rem min(7rem, 5%) 0 min(13rem, 24%);  
+}
+
+@media screen and (max-width: 650px) {
+  main {
+    padding: 3rem min(5rem, 15%) 0 min(5rem, 7%);  
+  }
+
 }

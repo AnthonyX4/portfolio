@@ -2,11 +2,12 @@ nav {
   height: 90vh;
 
   position: fixed;
-  top: 5vh;
   left: 3.4rem;
+  margin-top: 5vh;
 
   display: flex;
   flex-direction: column;
+
 }
 
 .navList {
@@ -41,13 +42,26 @@ nav {
   font-size: 0.9375rem;
 }
 
+button {
+  display: none;
+}
 
 @media screen and (max-width: 650px) {
   nav {
     height: 100vh;
     background-color: var(--primary-color);
     inset: 0;
+    margin-top: 0;
     justify-content: center;
+    z-index: 1;
+  }
+
+  /* To be completed: make navbar background have a glassy effect  */
+  nav::before{
+    content: '';
+    position: absolute;
+    inset: 0;
+
   }
 
   .navList {
@@ -63,7 +77,7 @@ nav {
   }
 
   .navIcons {
-    position: fixed;
+    position: absolute;
     bottom: 2rem;
     left: 2rem;
 
@@ -72,9 +86,32 @@ nav {
   }
 
   .logo {
-    position: fixed;
+    position: absolute;
     top: 2rem;
     left: 2rem;
   }
+
+  button {
+    display: block;
+    z-index: 3;
+    aspect-ratio: 1;
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+    background-color: transparent;
+    border: none;
+    color: var(--text-color);
+  }
+
+  nav{
+    top: -100%;
+    transition: top 300ms ease-in-out;
+  }
+
+  nav.open {
+    top: 0%;  
+  }
+
+
 
 }
