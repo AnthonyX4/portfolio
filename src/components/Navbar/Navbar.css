@@ -32,9 +32,6 @@ nav {
   padding: 0.5rem 0.5rem;
 }
 
-.navIcons a:hover {
-  color: var(--accent-color);
-}
 
 .navList a,
 .navIcons a {
@@ -102,6 +99,10 @@ button {
     border: none;
     color: var(--text-color);
   }
+
+  /* 
+  Below are animations...
+  Try refactoring jsx file to use framer motion code */
 
   nav{
     top: -100%;
