@@ -8,11 +8,18 @@ const Hero = () => {
   const [index, setIndex] = useState(0);
 
   useEffect(() => {
-    // Change word every 2 seconds (same as animation duration)
-    const interval = setInterval(() => {
-      setIndex((prev) => (prev + 1) % words.length);
-    }, 5000);
-    return () => clearInterval(interval);
+    let interval;
+
+    const timeout = setTimeout(() => {
+      interval = setInterval(() => {
+        setIndex((prev) => (prev + 1) % words.length);
+      }, 5000);
+    }, 2000);
+
+    return () => {
+      clearTimeout(timeout);
+      clearInterval(interval);
+    };
   }, []);
 
   const parentVariants = {
@@ -46,42 +53,69 @@ const Hero = () => {
     },
   };
 
-  return (
-    <div>
-      <h1 style={{fontSize: "4.5rem"}}>Anthony Truong</h1>
-      <h1 style={{fontSize: "1.5rem", fontWeight: "200"}}>computer engineering @ utoronto </h1>
+  const titleContainerVariants = {
+    initial: {},
+    animate: {
+      transition: {
+        staggerChildren: 0.5,
+      },
+    },
+  };
 
+  const nameTitleVariants = {
+    initial: {
+      opacity: 0,
+    },
+    animate: {
+      opacity: 1,
+      transition: {
+        duration: 2,
+      },
+    },
+  };
+
+  const educationTitleVariants = nameTitleVariants;
+
+  return (
+    <section id="hero">
       <motion.div
-        style={{ width: "min-width", position: "relative", top: "rem", zIndex: 1 }}
-        variants={parentVariants}
+        variants={titleContainerVariants}
         initial="initial"
         animate="animate"
+        style={{display: "flex", flexDirection: "column", gap: "0.8rem"}}
       >
-        <motion.svg
-          width="312"
-          height="35"
-          viewBox="0 0 312 35"
-          xmlns="http://www.w3.org/2000/svg"
-          style={{ zIndex: 1, position: "absolute", left: 0, top: 0 }}
-        >
-          <defs>
-            <clipPath id="reveal">
-              <motion.rect variants={svgVariants} width="312" height="35" />
-            </clipPath>
-          </defs>
-
-          <path
-            d="M0 0H312L290.5 35H0V0Z"
-            fill="#54C6CA"
-            clipPath="url(#reveal)"
-          />
-        </motion.svg>
-
-        <motion.h1 style={{ position: "absolute", fontSize: "1.5rem", fontWeight: "200" }} variants={textVariants}>
-          {words[index]}
+        <motion.h1 id="name-title" variants={nameTitleVariants}>
+          Anthony Truong
         </motion.h1>
+
+        <motion.h1 id="education-title" variants={educationTitleVariants}>
+          computer engineering @ utoronto
+        </motion.h1>
+
+        <motion.div id="traits-title" variants={parentVariants}>
+          <motion.svg
+            width="312"
+            height="35"
+            viewBox="0 0 312 35"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <defs>
+              <clipPath id="reveal">
+                <motion.rect variants={svgVariants} width="312" height="35" />
+              </clipPath>
+            </defs>
+
+            <path
+              d="M0 0H312L290.5 35H0V0Z"
+              fill="#54C6CA"
+              clipPath="url(#reveal)"
+            />
+          </motion.svg>
+
+          <motion.h1 variants={textVariants}>{words[index]}</motion.h1>
+        </motion.div>
       </motion.div>
-    </div>
+    </section>
   );
 };
 

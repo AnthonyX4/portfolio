@@ -5,7 +5,7 @@ import { BsFilePerson } from "react-icons/bs";
 import { LiaTimesSolid } from "react-icons/lia";
 import { FaBars } from "react-icons/fa6";
 import { useState } from "react";
-import { motion} from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 
 const NavIcon = ({ link, children }) => {
   return (
@@ -28,6 +28,7 @@ const Navbar = () => {
     setExpanded(!isExpanded);
   }
 
+
   return (
     <div>
       <button
@@ -41,30 +42,30 @@ const Navbar = () => {
         )}
       </button>
 
-        <nav 
-           className={isExpanded ? "open" : ""}
-        >
-          <div className="navList">
-            <a className="logo">AT</a>
-            <a>About</a>
-            <a>Projects</a>
-            <a>Skills</a>
-            <a>Experience</a>
-            <a>Contact</a>
-          </div>
+      <motion.nav
+        className={isExpanded ? "open" : ""}
+      >
+        <div className="navList">
+          <a className="logo">AT</a>
+          <a>About</a>
+          <a>Projects</a>
+          <a>Skills</a>
+          <a>Experience</a>
+          <a>Contact</a>
+        </div>
 
-          <div className="navIcons">
-            <NavIcon link="https://github.com/AnthonyX4">
-              <BsGithub size={"1.4rem"} />
-            </NavIcon>
-            <NavIcon link="https://www.linkedin.com/in/anthony-truong-172374143/">
-              <BsLinkedin size={"1.4rem"} />
-            </NavIcon>
-            <NavIcon link="https://www.linkedin.com/in/anthony-truong-172374143/">
-              <BsFilePerson size={"1.4rem"} />
-            </NavIcon>
-          </div>
-        </nav>
+        <div className="navIcons">
+          <NavIcon link="https://github.com/AnthonyX4">
+            <BsGithub size={"1.4rem"} />
+          </NavIcon>
+          <NavIcon link="https://www.linkedin.com/in/anthony-truong-172374143/">
+            <BsLinkedin size={"1.4rem"} />
+          </NavIcon>
+          <NavIcon link="https://www.linkedin.com/in/anthony-truong-172374143/">
+            <BsFilePerson size={"1.4rem"} />
+          </NavIcon>
+        </div>
+      </motion.nav>
     </div>
   );
 };

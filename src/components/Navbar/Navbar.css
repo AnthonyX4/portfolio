@@ -39,7 +39,7 @@ nav {
   font-size: 0.9375rem;
 }
 
-button {
+#toggle-sidebar-button {
   display: none;
 }
 
@@ -88,9 +88,9 @@ button {
     left: 2rem;
   }
 
-  button {
+  #toggle-sidebar-button {
     display: block;
-    z-index: 3;
+    z-index: 11;
     aspect-ratio: 1;
     position: fixed;
     top: 2rem;
@@ -100,7 +100,7 @@ button {
     color: var(--text-color);
   }
 
-  /* 
+  /*
   Below are animations...
   Try refactoring jsx file to use framer motion code */
 
