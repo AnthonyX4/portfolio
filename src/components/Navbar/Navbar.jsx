@@ -48,8 +48,8 @@ const Navbar = () => {
         <div className="navList">
           <a className="logo">AT</a>
           <a>About</a>
-          <a>Projects</a>
           <a>Skills</a>
+          <a>Projects</a>
           <a>Experience</a>
           <a>Contact</a>
         </div>

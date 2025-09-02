@@ -1,8 +1,11 @@
 import "./Hero.css";
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
+import section from "../../components/Content/Content"
 
-const words = ["Hello", "World", "From", "Framer Motion"];
+const content = section.find((item) => item.id === 'hero');
+
+const words = content.descriptions;
 
 const Hero = () => {
   const [index, setIndex] = useState(0);
@@ -77,7 +80,7 @@ const Hero = () => {
   const educationTitleVariants = nameTitleVariants;
 
   return (
-    <section id="hero">
+    <section id={content.id}>
       <motion.div
         variants={titleContainerVariants}
         initial="initial"
@@ -85,11 +88,11 @@ const Hero = () => {
         style={{display: "flex", flexDirection: "column", gap: "0.8rem"}}
       >
         <motion.h1 id="name-title" variants={nameTitleVariants}>
-          Anthony Truong
+          {content.title}
         </motion.h1>
 
         <motion.h1 id="education-title" variants={educationTitleVariants}>
-          computer engineering @ utoronto
+          {content.subtitle}
         </motion.h1>
 
         <motion.div id="traits-title" variants={parentVariants}>
