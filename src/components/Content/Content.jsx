@@ -31,9 +31,28 @@ const sections = [
             {
                 title: 'Personal Website V1',
                 period: '2025',
-                techstack: ['React', 'CSS', 'Motion', 'Three.js'],
+                image: 'ProjectOne.png',
+                techstack: ['React', 'CSS', 'Motion'],
                 summary: `The first iteration of my personal website 
-                made with React in which I explored animations and 3D models `,
+                made with React in which I explored animations and responsive layout design `,
+                description: `Sed ut perspiciatis unde omnis iste natus error sit 
+                voluptatem accusantium doloremque laudantium, totam rem aperiam, 
+                eaque ipsa quae ab illo inventore veritatis et quasi architecto 
+                beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia 
+                voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur 
+                magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro 
+                quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed q`,
+                improvements: ['asd', 'asd', 'asd'],
+                url: 'https://www.google.com/',
+                github: 'https://github.com/AnthonyX4/portfolio',
+            }, 
+            {
+                title: 'Personal Website V1',
+                period: '2025',
+                image: 'ProjectOne.png',
+                techstack: ['React', 'CSS', 'Motion'],
+                summary: `The first iteration of my personal website 
+                made with React in which I explored animations and responsive layout design `,
                 description: `Sed ut perspiciatis unde omnis iste natus error sit 
                 voluptatem accusantium doloremque laudantium, totam rem aperiam, 
                 eaque ipsa quae ab illo inventore veritatis et quasi architecto 

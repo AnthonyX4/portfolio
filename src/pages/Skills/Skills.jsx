@@ -16,11 +16,11 @@ const Skills = () => {
                     <div className={styles.skillsContainer}>
                         {
                             content.languages.map((item, index) =>
-                                <p1
+                                <p
                                     key={index}
                                     className={styles.skill}
                                 > {item}
-                                </p1>
+                                </p>
                             )
                         }
 
@@ -32,11 +32,11 @@ const Skills = () => {
                     <div className={styles.skillsContainer}>
                         {
                             content.developerTools.map((item, index) =>
-                                <p1
+                                <p
                                     key={index}
                                     className={styles.skill}
                                 > {item}
-                                </p1>
+                                </p>
                             )
                         }
                     </div>
@@ -47,11 +47,11 @@ const Skills = () => {
                     <div className={styles.skillsContainer}>
                         {
                             content.frameworks.map((item, index) =>
-                                <p1
+                                <p
                                     key={index}
                                     className={styles.skill}
                                 > {item}
-                                </p1>
+                                </p>
                             )
                         }
                     </div>
@@ -62,11 +62,11 @@ const Skills = () => {
                     <div className={styles.skillsContainer}>
                         {
                             content.libraries.map((item, index) =>
-                                <p1
+                                <p
                                     key={index}
                                     className={styles.skill}
                                 > {item}
-                                </p1>
+                                </p>
                             )
                         }
                     </div>

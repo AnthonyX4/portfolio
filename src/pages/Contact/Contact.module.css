@@ -1,0 +1,22 @@
+.contact{
+    margin-top: 30vh;
+    margin-bottom: 15vh;
+}
+
+.contentBox{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.emailSection {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.emailTitle, .email {
+    color: var(--text-color);
+    font-size: 1.3rem;
+
+}

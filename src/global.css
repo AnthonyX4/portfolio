@@ -2,7 +2,8 @@
 
 :root {
   --primary-color: #11121a;
-  --hover-color: #272832;
+  --secondary-color: #272832;
+  --card-color: #1d1e23;
   --accent-color: #64bafa;
   --theme-color: #54C6CA;
   --text-color: #c9c9c9;
@@ -22,7 +23,7 @@ body {
 }
 
 main {
-  padding: 3rem min(7rem, 5%) 0 min(13rem, 24%);  
+  padding: 3rem min(7rem, 5.7%) 0 min(13rem, 24%);  
 }
 
 @media screen and (max-width: 650px) {

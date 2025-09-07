@@ -15,7 +15,7 @@
 /* Container for text + images */
 .contentBox {
   display: flex;
-  gap: 5rem;
+  gap: 6rem;
   padding-right: 1rem;
   z-index: 1;
 }
@@ -36,7 +36,7 @@
 .textBox {
   display: flex;
   flex-direction: column;
-  gap: 3rem;
+  gap: 2rem;
 }
 
 /* ---------------------------

@@ -12,8 +12,8 @@ const About = () => {
 
                 <div className={styles.textBox}>
                     <h1 className="title">{content.title}</h1>
-                    <p1 className={styles.text}>{content.contentOne}</p1>
-                    <p1 className={styles.text}>{content.contentTwo}</p1>
+                    <p className={styles.text}>{content.contentOne}</p>
+                    <p className={styles.text}>{content.contentTwo}</p>
                 </div>
 
                 <div className={styles.picturesBox}>
@@ -39,7 +39,7 @@ const About = () => {
                     </svg>
 
                     <div className={styles.chineseNameContainer}>
-                        <p1 className={styles.chineseName}>發布</p1>
+                        <p className={styles.chineseName}>發布</p>
                     </div>
 
                 </div>

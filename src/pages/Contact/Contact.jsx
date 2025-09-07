@@ -1,10 +1,19 @@
-import './Contact.css';
+import styles from './Contact.module.css';
+import section from "../../components/Content/Content";
+const content = section.find((item) => item.id === 'contact');
 
 const Contact = () => {
     return(
-        <div>
-            <h1>Contact</h1>
-        </div>
+        <section className={styles.contact}>
+            <div className={styles.contentBox}>
+                <h1 className="title">{content.title}</h1>  
+                <div className={styles.emailSection}>
+                    <span className={styles.emailTitle}>Email:</span>
+                    <span className={styles.email}>{content.email}</span>
+                </div>
+            </div>
+
+        </section>
     );
 }
 
