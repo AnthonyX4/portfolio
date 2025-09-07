@@ -1,10 +1,13 @@
-import './Projects.css';
+import styles from './Projects.module.css';
+import section from "../../components/Content/Content";
+const content = section.find((item) => item.id === 'projects');
 
 const Projects = () => {
     return(
-        <div>
-            <h1>Projects</h1>
-        </div>
+        <section className={styles.projects}>
+            <h1 className="title">{content.title}</h1>
+
+        </section>
     );
 }
 

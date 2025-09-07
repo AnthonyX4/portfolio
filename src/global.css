@@ -4,6 +4,7 @@
   --primary-color: #11121a;
   --hover-color: #272832;
   --accent-color: #64bafa;
+  --theme-color: #54C6CA;
   --text-color: #c9c9c9;
 }
 
@@ -30,3 +31,10 @@ main {
   }
 
 }
+
+.title{
+  font-size: 3rem;
+  font-weight: 600;
+  color: var(--theme-color);
+}
+

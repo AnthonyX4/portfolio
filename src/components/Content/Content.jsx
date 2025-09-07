@@ -8,23 +8,25 @@ const sections = [
     },
     {
         id: 'about',
-        title: 'About',
-        content: `I'm a passionate software developer based in Toronto, specializing 
-        in machine learning and web development. On the side, I like to tinker with mini 
-        hardware projects such as LEDs and displays. Currently, I'm in my second year of 
-        computer engineering at the University of Toronto.`
+        title: 'about.',
+        contentOne: `I'm a passionate software developer based in Toronto, specializing 
+        in machine learning and web development. Currently, I'm in my second year of 
+        electrical engineering at the University of Toronto. `,
+        contentTwo: `In my spare time, I like to tinker with 
+        hardware projects, play basketball, and play video games.`
     },
     {
+        //I should organize these skills by alpha order (do it manually or through code)
         id: 'skills',
-        title: 'Skills',
-        languages: ['HTML 5', 'CSS', 'JavaScript', 'C/C++', 'Python', 'Bash', 'Arduino'],
+        title: 'skills.',
+        languages: ['HTML 5', 'CSS', 'JavaScript', 'C/C++', 'Python', 'Bash', 'Arduino', 'SQL', 'Java'],
         developerTools: ['Git', 'PostgreSQL', 'Node.js', 'VS Code'],
         frameworks: ['React.js', 'Express.js', 'Tailwind CSS'],
-        libraries: ['Motion', 'FastLED', 'Adafruit'],
+        libraries: ['Motion', 'FastLED', 'Adafruit GFX'],
     },
     {
         id: 'projects',
-        title: 'Projects',
+        title: 'projects.',
         items: [
             {
                 title: 'Personal Website V1',
@@ -48,7 +50,7 @@ const sections = [
     },
     {
         id: 'experience',
-        title: 'Experience',
+        title: 'experience.',
         items: [
             {
                 role: 'ECE Executive',
@@ -71,7 +73,7 @@ const sections = [
     },
     {
         id: 'contact',
-        title: 'Contact',
+        title: 'contact.',
         email: 'anthonyacara@gmail.com'
     },
 

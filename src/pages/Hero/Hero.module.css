@@ -1,18 +1,18 @@
-#name-title{
+.nameTitle{
     font-size: clamp(2rem, 6vw, 6rem);
     font-weight: 600;
     z-index: 1;
     color: var(--text-color);
 }
 
-#education-title{
+.educationTitle{
     font-size: clamp(0.7rem, 2vw, 1.5rem);
     font-weight: 200;
     z-index: 1;
     color: var(--text-color);
 }
 
-#traits-title {
+.traitsTitle {
     width: 100%;
     height: 3rem;
     display: block;
@@ -21,13 +21,13 @@
     color: var(--text-color);
 }
 
-#traits-title svg {
+.traitsTitle svg {
     height: 100%;
     position: absolute;
     z-index: 1;
 }
 
-#traits-title h1 {
+.traitsTitle h1 {
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -38,7 +38,7 @@
     z-index: 0;
 }
 
-#hero{
+.hero{
     margin-left: 11vw;
     margin-top: 20vh;
 }

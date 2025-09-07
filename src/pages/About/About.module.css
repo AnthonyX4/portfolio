@@ -1,0 +1,91 @@
+/* ---------------------------
+   Imports
+---------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap');
+
+/* ---------------------------
+   Section Layout
+---------------------------- */
+
+/* About section wrapper */
+.about {
+  margin-top: 60vh; /* spacing from previous section */
+}
+
+/* Container for text + images */
+.contentBox {
+  display: flex;
+  gap: 5rem;
+  padding-right: 1rem;
+  z-index: 1;
+}
+
+/* ---------------------------
+   Text Styling
+---------------------------- */
+
+
+/* Paragraph text */
+.text {
+  font-size: 1.3rem;
+  font-weight: 200;
+  color: var(--text-color);
+}
+
+/* Wrapper for multiple text blocks */
+.textBox {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+/* ---------------------------
+   Images & Decorations
+---------------------------- */
+
+/* Container holding profile image + hat + Chinese name */
+.picturesBox {
+  position: relative;
+}
+
+/* Profile photo */
+.profileImage {
+  width: 30rem;
+  height: 39rem;
+  object-fit: cover;
+  border-radius: 2%;
+  /* border: 3px solid var(--accent-color); */
+}
+
+/* Hat SVG positioned over image */
+.hat {
+  position: absolute;
+  top: 4.5rem;
+  left: 8.6rem;
+  transform: rotate(-10deg);
+  z-index: 2;
+}
+
+/* ---------------------------
+   Chinese Name Styling
+---------------------------- */
+
+/* Text styling */
+.chineseName {
+  font-family: "Noto Sans TC", sans-serif;
+  font-weight: 500;
+  font-size: 6rem;
+  color: white;
+  width: max-content;
+}
+
+/* Vertical layout + positioning */
+.chineseNameContainer {
+  position: absolute;
+  top: 2rem;
+  left: 25rem;
+  
+  writing-mode: vertical-lr;
+  text-orientation: sideways;
+  transform: rotate(0deg);
+}

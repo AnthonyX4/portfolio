@@ -1,0 +1,38 @@
+.skills {
+    margin-top: 30vh;
+    /* height: 100vh;  */
+    /* remove later */
+}
+
+
+.skillTitle {
+    color: var(--text-color);
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.skillsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.skill{
+    border: 0.1rem solid var(--text-color);
+    border-radius: 0.2rem;
+    color: var(--text-color);
+    font-size: 1rem;
+    padding: 0.5rem;
+}
+
+.contentBox {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.skillSection {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem
+}

@@ -1,4 +1,4 @@
-import "./Hero.css";
+import styles from "./Hero.module.css";
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
 import section from "../../components/Content/Content"
@@ -80,22 +80,22 @@ const Hero = () => {
   const educationTitleVariants = nameTitleVariants;
 
   return (
-    <section id={content.id}>
+    <section className={styles.hero}>
       <motion.div
         variants={titleContainerVariants}
         initial="initial"
         animate="animate"
         style={{display: "flex", flexDirection: "column", gap: "0.8rem"}}
       >
-        <motion.h1 id="name-title" variants={nameTitleVariants}>
+        <motion.h1 className={styles.nameTitle} variants={nameTitleVariants}>
           {content.title}
         </motion.h1>
 
-        <motion.h1 id="education-title" variants={educationTitleVariants}>
+        <motion.h1 className={styles.educationTitle} variants={educationTitleVariants}>
           {content.subtitle}
         </motion.h1>
 
-        <motion.div id="traits-title" variants={parentVariants}>
+        <motion.div className={styles.traitsTitle} variants={parentVariants}>
           <motion.svg
             width="312"
             height="35"
@@ -110,7 +110,7 @@ const Hero = () => {
 
             <path
               d="M0 0H312L290.5 35H0V0Z"
-              fill="#54C6CA"
+              fill="var(--theme-color)" 
               clipPath="url(#reveal)"
             />
           </motion.svg>
