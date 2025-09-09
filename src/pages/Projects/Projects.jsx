@@ -1,7 +1,6 @@
 import styles from './Projects.module.css';
 import { BsGithub } from "react-icons/bs";
 import { PiGlobeLight } from "react-icons/pi";
-import { IoChevronForward } from "react-icons/io5";
 import { motion, AnimatePresence } from "framer-motion";
 import { useState, useEffect } from 'react';
 import section from "../../components/Content/Content";
@@ -95,8 +94,7 @@ const Projects = () => {
                                         whileHover={{ scale: 1.05 }}
                                         onClick={()=>setToggleModal(!toggleModal)}
                                     >
-                                        <p>details</p>
-                                        <IoChevronForward size={"1.4rem"} />
+                                        <p>more</p>
                                     </motion.button>
 
                                      <AnimatePresence>
