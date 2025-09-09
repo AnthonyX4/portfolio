@@ -84,6 +84,14 @@
     font-size: 1rem;
   }
 
+  .hat {
+    top: 4.2rem;
+    left: 5.6rem;
+    width: 8.5rem;
+    height: 8.5rem;
+
+  }
+
 
 }
 
@@ -97,6 +105,13 @@
   .contentBox{
     gap: 2rem;
     padding-right: 0;
+  }
+
+  .hat{
+    width: 4.2em;
+    height: 4.2rem;
+    top: 3.5rem;
+    left: 2.8rem;
   }
 
 }

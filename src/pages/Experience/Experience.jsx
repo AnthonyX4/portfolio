@@ -6,7 +6,7 @@ const content = section.find((item) => item.id === 'experience');
 const Experience = () => {
 
     return (
-        <section className={styles.experience}>
+        <section id="experience" className={styles.experience}>
             <div className={styles.contentBox}>
                 <h1 className="title">{content.title}</h1>
 
@@ -36,7 +36,7 @@ const Experience = () => {
                                         <span>{experience.location}</span>
                                     </div>
                                     <ul>
-                                            {experience.roleDescription.map((description) => <li>{description}</li>)}
+                                            {experience.roleDescription.map((description, descIndex) => <li key={descIndex}>{description}</li>)}
                                     </ul>
 
                                 </div>

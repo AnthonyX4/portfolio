@@ -27,6 +27,39 @@ const Navbar = () => {
     setExpanded(!isExpanded);
   }
 
+  const scrollToSection = (sectionId) => {
+    if (sectionId === 'hero') {
+      // Scroll to top of page for hero
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+      window.history.pushState(null, null, '#hero');
+    } else if (sectionId === 'contact') {
+      // For contact, scroll without offset
+      const element = document.getElementById(sectionId);
+      if (element) {
+        element.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start'
+        });
+        window.history.pushState(null, null, `#${sectionId}`);
+      }
+    } else {
+      // For other sections, use scrollIntoView (CSS handles the offset)
+      const element = document.getElementById(sectionId);
+      if (element) {
+        element.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start'
+        });
+        window.history.pushState(null, null, `#${sectionId}`);
+      }
+    }
+    // Close mobile menu after navigation
+    setExpanded(false);
+  };
+
 
   return (
     <div>
@@ -45,16 +78,16 @@ const Navbar = () => {
         className={isExpanded ? "open" : ""}
       >
         <div className="navList">
-          <a className="logo"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="1.5rem" height="1.5rem" style={{transform: "rotate(180deg)"}}>
-  <path d="M10 90 L50 10 L90 90 H70 L50 40 L30 90 Z" fill="var(--theme-color)"/>
-</svg>
+          <a className="logo" onClick={() => scrollToSection('hero')}><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="1.5rem" height="1.5rem" style={{ transform: "rotate(180deg)" }}>
+            <path d="M10 90 L50 10 L90 90 H70 L50 40 L30 90 Z" fill="var(--theme-color)" />
+          </svg>
 
           </a>
-          <a>About</a>
-          <a>Skills</a>
-          <a>Projects</a>
-          <a>Experience</a>
-          <a>Contact</a>
+          <a onClick={() => scrollToSection('about')}>About</a>
+          <a onClick={() => scrollToSection('skills')}>Skills</a>
+          <a onClick={() => scrollToSection('projects')}>Projects</a>
+          <a onClick={() => scrollToSection('experience')}>Experience</a>
+          <a onClick={() => scrollToSection('contact')}>Contact</a>
         </div>
 
         <div className="navIcons">

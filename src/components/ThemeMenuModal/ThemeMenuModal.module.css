@@ -1,0 +1,24 @@
+.ThemeSelectorButton {
+  height: 2.5rem;
+  width: 2.5rem;
+  background-color: var(--theme-color);
+  border-radius: 50%;
+  position: fixed;
+  right: 1.5rem;
+  top: 2rem;
+
+  /* reset button defaults */
+  border: none;
+  outline: none;
+  padding: 0;
+  margin: 0;
+  background: var(--theme-color);
+  cursor: pointer;
+}
+
+@media screen and (max-width: 650px) {
+    .ThemeSelectorButton {
+        top: auto;
+        bottom: 2rem;
+    }
+}

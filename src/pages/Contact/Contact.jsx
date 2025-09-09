@@ -4,7 +4,7 @@ const content = section.find((item) => item.id === 'contact');
 
 const Contact = () => {
     return(
-        <section className={styles.contact}>
+        <section id="contact" className={styles.contact} style={{scrollMarginTop: 0}}>
             <div className={styles.contentBox}>
                 <h1 className="title">{content.title}</h1>  
                 <div className={styles.emailSection}>

@@ -80,7 +80,7 @@ const Hero = () => {
   const educationTitleVariants = nameTitleVariants;
 
   return (
-    <section className={styles.hero}>
+    <section id="hero" className={styles.hero}>
       <motion.div
         variants={titleContainerVariants}
         initial="initial"

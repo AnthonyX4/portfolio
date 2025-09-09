@@ -35,14 +35,7 @@ const sections = [
                 techstack: ['React', 'CSS', 'Motion'],
                 summary: `The first iteration of my personal website 
                 made with React in which I explored animations and responsive layout design `,
-                description: `Sed ut perspiciatis unde omnis iste natus error sit 
-                voluptatem accusantium doloremque laudantium, totam rem aperiam, 
-                eaque ipsa quae ab illo inventore veritatis et quasi architecto 
-                beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia 
-                voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur 
-                magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro 
-                quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed q`,
-                improvements: ['asd', 'asd', 'asd'],
+                description: `A modern portfolio website built with React and Framer Motion featuring smooth animations, responsive design, and interactive elements. The site includes a dynamic particle background, smooth scroll navigation with URL hash routing, mobile-responsive hamburger menu, and animated project modals with scroll lock functionality. Built using React hooks for state management, CSS Modules for styling, and Framer Motion for smooth transitions throughout the user interface.`,
                 url: 'https://www.google.com/',
                 github: 'https://github.com/AnthonyX4/portfolio',
             },
