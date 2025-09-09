@@ -13,7 +13,6 @@ const NavIcon = ({ link, children }) => {
       href={link}
       target="_blank"
       rel="noopener noreferrer"
-      className="navIcon"
       whileHover={{ color: "var(--accent-color)" }}
     >
       {children}
@@ -46,7 +45,11 @@ const Navbar = () => {
         className={isExpanded ? "open" : ""}
       >
         <div className="navList">
-          <a className="logo">AT</a>
+          <a className="logo"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="1.5rem" height="1.5rem" style={{transform: "rotate(180deg)"}}>
+  <path d="M10 90 L50 10 L90 90 H70 L50 40 L30 90 Z" fill="var(--theme-color)"/>
+</svg>
+
+          </a>
           <a>About</a>
           <a>Skills</a>
           <a>Projects</a>

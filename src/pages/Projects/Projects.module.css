@@ -82,3 +82,17 @@
     margin-left: auto;
     font-weight: 400;
 }
+
+@media screen and (max-width: 1200px) {
+    .projectsSectionContainer{
+        grid-template-columns: 1fr 1fr; 
+    }
+
+}
+
+@media screen and (max-width: 690px) {
+    .projectsSectionContainer{
+        grid-template-columns: 1fr;
+    }
+
+}

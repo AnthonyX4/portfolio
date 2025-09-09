@@ -1,0 +1,97 @@
+.experience {
+    margin-top: 30vh;
+}
+
+.contentBox{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.timelineBox {
+    border-left: 1px solid var(--theme-color);
+    width: 98%;
+    min-height: 15rem;
+    position: relative;
+    margin-left: 2%;
+}
+
+.timelineCircle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateX(-50%); /* shift left by half width */
+    border-radius: 50%;
+    height: 1.75rem;
+    width: 1.75rem;
+    z-index: 2;
+    border: 1px solid var(--theme-color);
+    background-color: var(--primary-color);
+}
+
+.timelineFirstItem{
+    background-color: var(--theme-color);
+}
+
+.timelineDiamond {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translate(-50%, 50%); /* push left AND down by half its size */
+}
+
+.experienceContainer {
+    margin-left: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+}
+
+.experienceHeader {
+    color: var(--text-color);
+    font-size: 0.9rem;
+    display: flex;
+    gap: 0.5rem;
+    
+}
+
+.experienceContainer ul {
+    list-style: none;     /* remove default bullets */
+    padding-left: 0;
+    color: var(--text-color);
+    line-height: 1.75;
+
+}
+
+.experienceContainer li {
+    position: relative;
+    padding-left: 1.25rem;  /* space for custom bullet */
+    color: var(--text-color);
+}
+
+.experienceContainer li::before {
+    content: "•";  /* custom bullet */
+    position: absolute;
+    left: 0;
+}
+
+.role {
+    color: var(--text-color);
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.organization {
+    color: var(--text-color);
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+
+@media screen and (max-width: 650px) {
+
+    .timelineBox {
+        min-height: 25rem;
+    }
+
+}

@@ -43,9 +43,11 @@
    Images & Decorations
 ---------------------------- */
 
-/* Container holding profile image + hat + Chinese name */
+/* Container holding profile image + hat*/
 .picturesBox {
   position: relative;
+  display: flex;
+  align-items: center;
 }
 
 /* Profile photo */
@@ -66,26 +68,35 @@
   z-index: 2;
 }
 
-/* ---------------------------
-   Chinese Name Styling
----------------------------- */
 
-/* Text styling */
-.chineseName {
-  font-family: "Noto Sans TC", sans-serif;
-  font-weight: 500;
-  font-size: 6rem;
-  color: white;
-  width: max-content;
+@media screen and (max-width: 1200px) {
+  .profileImage {
+    width: 20rem;
+    height: 29rem;
+  }
+
+  .contentBox{
+    gap: 2rem;
+    padding-right: 0;
+  }
+
+  .text {
+    font-size: 1rem;
+  }
+
+
 }
 
-/* Vertical layout + positioning */
-.chineseNameContainer {
-  position: absolute;
-  top: 2rem;
-  left: 25rem;
-  
-  writing-mode: vertical-lr;
-  text-orientation: sideways;
-  transform: rotate(0deg);
+@media screen and (max-width: 690px) {
+
+  .profileImage {
+    width: 10rem;
+    height: 14rem;
+  }
+
+  .contentBox{
+    gap: 2rem;
+    padding-right: 0;
+  }
+
 }

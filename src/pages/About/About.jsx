@@ -19,7 +19,7 @@ const About = () => {
                 <div className={styles.picturesBox}>
                     <img className={styles.profileImage} src={headshotImage} alt="Profile headshot" />
 
-                    <svg className={styles.hat} width="12.5rem" height="12.5rem" viewBox="0 0 694 304" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    {/* <svg className={styles.hat} width="12.5rem" height="12.5rem" viewBox="0 0 694 304" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <mask id="mask0_97_10" style={{ maskType: 'alpha' }} maskUnits="userSpaceOnUse" x="0" y="260" width="694" height="25">
                             <rect y="260" width="694" height="25" fill="#FED730" />
                         </mask>
@@ -36,11 +36,8 @@ const About = () => {
                             <path d="M-125 202H387V260H-125V202Z" fill="#D91213" />
                             <path d="M347 202H859V260H347V202Z" fill="#E45E5E" />
                         </g>
-                    </svg>
+                    </svg> */}
 
-                    <div className={styles.chineseNameContainer}>
-                        <p className={styles.chineseName}>發布</p>
-                    </div>
 
                 </div>
 

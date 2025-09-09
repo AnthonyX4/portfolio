@@ -1,12 +1,12 @@
 .nameTitle{
-    font-size: clamp(2rem, 6vw, 6rem);
+    font-size: 5.5rem;
     font-weight: 600;
     z-index: 1;
     color: var(--text-color);
 }
 
 .educationTitle{
-    font-size: clamp(0.7rem, 2vw, 1.5rem);
+    font-size: 1.5rem;
     font-weight: 200;
     z-index: 1;
     color: var(--text-color);
@@ -33,7 +33,7 @@
     flex-direction: column;
     justify-content: center;
     position: absolute;
-    font-size: clamp(0.7rem, 2vw, 1.5rem);
+    font-size: 1.5rem;
     font-weight: 200;
     z-index: 0;
 }
@@ -49,3 +49,15 @@
     left: 0;
     top: 0;
 } */
+
+@media screen and (max-width: 650px) {
+    .nameTitle{
+        font-size: 2.5rem;
+    }
+
+    .educationTitle, .traitsTitle h1 {
+        font-size: 1.2rem;
+    }
+
+
+}

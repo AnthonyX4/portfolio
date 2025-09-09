@@ -6,6 +6,7 @@ import Skills from './pages/Skills/Skills'
 import Projects from './pages/Projects/Projects'
 import Contact from './pages/Contact/Contact'
 import ParticleBackground from './components/Background/ParticleBackground'
+import Experience from './pages/Experience/Experience'
 
 const App = () => {
 
@@ -26,6 +27,7 @@ const App = () => {
         <About />
         <Skills />
         <Projects />
+        <Experience />
         <Contact />
       </main>
     </>

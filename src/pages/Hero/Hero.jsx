@@ -97,7 +97,7 @@ const Hero = () => {
 
         <motion.div className={styles.traitsTitle} variants={parentVariants}>
           <motion.svg
-            width="312"
+            width="20rem"
             height="35"
             viewBox="0 0 312 35"
             xmlns="http://www.w3.org/2000/svg"
