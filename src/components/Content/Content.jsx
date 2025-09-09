@@ -20,7 +20,7 @@ const sections = [
         id: 'skills',
         title: 'Skills',
         languages: ['HTML 5', 'CSS', 'JavaScript', 'C/C++', 'Python', 'Bash', 'Arduino', 'SQL', 'Java'],
-        developerTools: ['Git', 'PostgreSQL', 'Node.js', 'VS Code'],
+        developerTools: ['Git', 'PostgreSQL', 'Node.js', 'Figma', 'VS Code'],
         frameworks: ['React.js', 'Express.js', 'Tailwind CSS'],
         libraries: ['Motion', 'FastLED', 'Adafruit GFX'],
     },
@@ -32,11 +32,11 @@ const sections = [
                 title: 'Personal Website V1',
                 period: '2025',
                 image: 'ProjectOne.png',
-                techstack: ['React', 'CSS', 'Motion'],
+                techstack: ['React', 'CSS', 'Motion', 'Figma'],
                 summary: `The first iteration of my personal website 
                 made with React in which I explored animations and responsive layout design `,
-                description: `A modern portfolio website built with React and Framer Motion featuring smooth animations, responsive design, and interactive elements. The site includes a dynamic particle background, smooth scroll navigation with URL hash routing, mobile-responsive hamburger menu, and animated project modals with scroll lock functionality. Built using React hooks for state management, CSS Modules for styling, and Framer Motion for smooth transitions throughout the user interface.`,
-                url: 'https://www.google.com/',
+                description: `A modern portfolio website, inspired in part by hamishw.com, built with React and Framer Motion featuring smooth animations, responsive design, and interactive elements. The site includes a dynamic particle background, smooth scroll navigation with URL hash routing, mobile-responsive hamburger menu, and animated project modals with scroll lock functionality. Built using React hooks for state management, CSS Modules for styling, and Framer Motion for smooth transitions throughout the user interface. `,
+                url: 'https://anthonytruong.ca/',
                 github: 'https://github.com/AnthonyX4/portfolio',
             },
     

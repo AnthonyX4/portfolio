@@ -97,7 +97,7 @@ const Navbar = () => {
           <NavIcon link="https://www.linkedin.com/in/anthony-truong-172374143/">
             <BsLinkedin size={"1.4rem"} />
           </NavIcon>
-          <NavIcon link="https://www.linkedin.com/in/anthony-truong-172374143/">
+          <NavIcon link="https://drive.google.com/file/d/15dyV3iXq4Nz-9I5rzuwm9roC87DqTLNW/view?usp=sharing">
             <BsFilePerson size={"1.4rem"} />
           </NavIcon>
         </div>
